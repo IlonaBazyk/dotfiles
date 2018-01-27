@@ -1,0 +1,75 @@
+[user]
+  name = EugeneDz
+  email = e.dzhevadov@gmail.com
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore_global
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+  # Add all
+  aa = add --all
+
+  # Commit
+  cm = commit -m
+  ca = !git add --all && git commit -m
+  amend = commit --amend
+  amend-all = !git add --all && git commit --amend --reuse-message=HEAD
+
+  # Clone
+  cl = clone
+
+  # Branch
+  b = branch
+
+  # Checkout
+  co = checkout
+  cb = checkout -b
+
+  # Diff
+  d = diff
+  dc = diff --cached
+
+  # Merge
+  m = merge
+
+  # Pull
+  pl = pull
+  plom = pull origin master
+  plum = pull upstream master
+
+  # Push
+  p = push
+  pom = push origin master
+  poh = push origin head
+
+  # Rebase
+  frum = !git fetch upstream && git rebase upstream/master
+  from = !git fetch origin && git rebase origin/master
+
+  # Stash
+  ss = stash
+  ssp = stash pop
+
+  # Reset
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+
+  # Remote
+  r = remote -v
+
+  # Status/Logging
+  l = log
+  lp = log -p
+  s = status -sb
+  st = status
+  hist = log --graph --pretty=format:'%C(red)%h%Creset %C(green)%cr %C(yellow)%d%Creset %s %C(magenta)[%an]%Creset' --abbrev-commit --date=relative
+
+  # Submodules
+  subpl = submodule update --init --recursive
+
+  # Misc
+  aliases = config --get-regexp alias
+[credential]
+  helper = osxkeychain
+[hub]
+  protocol = ssh
