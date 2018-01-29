@@ -6,12 +6,47 @@ call plug#begin('~/.vim/plugged')
 
 " Plugins
 " Editor Features
+Plug 'valloric/youcompleteme'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
+Plug 'kien/ctrlp.vim'
+Plug 'ap/vim-css-color'
+
 " Language/Syntax
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'mxw/vim-jsx'
+Plug 'raimondi/delimitmate'
+Plug 'plasticboy/vim-markdown'
+
 " Color Schemes
 Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable JSX syntax highlighting for files with the .js extesion 
+let g:jsx_ext_required = 0
+
+" Syntastic defaults
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
