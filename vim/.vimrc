@@ -7,6 +7,10 @@ call plug#begin('~/.vim/plugged')
 " Plugins
 " Editor Features
 Plug 'valloric/youcompleteme'
+" To complete installation of Ycm pluggin by running following
+" $ sudo pip3 install --upgrade neovim
+" $ python ~/.vim/plugged/youcompleteme/install.py
+
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
