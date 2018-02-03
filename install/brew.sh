@@ -51,8 +51,10 @@ apps=(
     ack
     diff-so-fancy
     wifi-password
+    vim --with-python3
     neovim
     tmux
+    cmake
 )
 
 for item in ${apps[*]}
