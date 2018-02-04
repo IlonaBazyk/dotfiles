@@ -17,18 +17,18 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'kien/ctrlp.vim'
-Plug 'ap/vim-css-color'
 
 " Language/Syntax
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
-Plug 'mxw/vim-jsx'
 Plug 'raimondi/delimitmate'
 Plug 'plasticboy/vim-markdown'
 
 " Color Schemes
-Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -38,6 +38,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable JSX syntax highlighting for files with the .js extesion 
 let g:jsx_ext_required = 0
+let g:xml_syntax_folding = 1
 
 " Syntastic defaults
 set statusline+=%#warningmsg#
@@ -167,10 +168,8 @@ syntax enable
   set termguicolors
  endif
 
-try
-    colorscheme OceanicNext
-catch
-endtry
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 
 set background=dark
 
