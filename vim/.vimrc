@@ -52,6 +52,7 @@ let g:syntastic_check_on_wq = 0
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
