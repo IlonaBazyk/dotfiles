@@ -28,7 +28,7 @@ Plug 'raimondi/delimitmate'
 Plug 'plasticboy/vim-markdown'
 
 " Color Schemes
-Plug 'morhetz/gruvbox'
+Plug 'trevordmiller/nova-vim'
 
 call plug#end()
 
@@ -161,18 +161,8 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
-" for vim 7
- set t_Co=256
-
-" for vim 8
- if (has("termguicolors"))
-  set termguicolors
- endif
-
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
-
-set background=dark
+" Theme
+colorscheme nova
 
 " Set line numbers
 set number
