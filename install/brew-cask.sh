@@ -24,6 +24,7 @@ apps=(
     telegram-desktop
     discord
     sequel-pro
+    mamp
 )
 
 for item in ${apps[*]}
